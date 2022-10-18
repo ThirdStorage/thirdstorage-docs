@@ -10,7 +10,7 @@ const config = {
   tagline: "Storage paradigms for web3 dapps",
   url: "https://docs.thirdstorage.com",
   baseUrl: "/",
-  onBrokenLinks: "throw",
+  onBrokenLinks: "log",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon,ico",
 

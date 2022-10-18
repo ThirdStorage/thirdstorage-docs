@@ -12,7 +12,7 @@ If you are looking to create a new [Third Storage Localhost](https://thirdstorag
 npx thirdstorage
 ```
 
-Once you run the above command, you will be required to select the [storage paradigm]((/getting-started/storage-paradigms)) of your choice. Currently, only **'demo paradigm'** is available in beta. You will be getting to know more about storage paradigms in the [next step](/getting-started/storage-paradigms).
+Once you run the above command, you will be required to select the [storage paradigm](/getting-started/storage-paradigms) of your choice. Currently, only **'demo paradigm'** is available in beta. You will be getting to know more about storage paradigms in the [next step](/getting-started/storage-paradigms).
 
 
 ### Create a Cloud project
