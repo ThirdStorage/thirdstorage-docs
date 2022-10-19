@@ -2,6 +2,7 @@
 
 It is possible to save, modify and retrive files stored on Third Storage. With storage, you can opt the perpetual file storage provider of your choice. The best part is that Third Storage supports _IPNS_ configurations which provide a **mutable** filesystem for storing content-addressable files. CID revisions is possible with Third Storage and you can resolve the most latest CID added to an IPNS name.
 
+
 ### Uploading files to Filecoin and serving on IPFS
 
 ```js
@@ -11,6 +12,8 @@ thirdstorage.ipfs(blob);
 The response from the function will contain the IPFS CID which can be used for identifying the file. You can also view the list of files stored in the web dashboard.
 
 ### Uploading files to Filecoin and serving on IPNS with IPFS
+
+![ipns](https://cdn.discordapp.com/attachments/1030935403177459732/1032377487709184071/storage.png)
 
 ```js
 thirdstorage.ipns("name",blob);

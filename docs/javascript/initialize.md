@@ -15,7 +15,8 @@ import { ThirdStorageClient } from "thirdstorage";
 Initialize the `ThirdStorageClient()` in the root function which wraps all the components of your application :
 
 ```js
-<ThirdStorage appId="xxxxx" dbsecret="yyyyy" >
-// other components
-</ ThirdStorage>
+const thirdstorage = await ThirdStorageClient.put(
+  '<PROJECT_ID>',
+  '<DB_SECRET_KEY>'
+);
 ```
