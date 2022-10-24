@@ -13,7 +13,7 @@ thirdstorage.database.set("key","value");
 ### Retriving new data
 
 ```js
-thirdstorage.database.get("key","value");
+thirdstorage.database.get("key");
 ```
 
 ## Multi-node scaling

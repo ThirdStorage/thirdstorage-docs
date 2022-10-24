@@ -2,7 +2,7 @@
 
 One of the most important novelties of Third Storage is that it values user's data privacy and ownership. Each user's data is classified into two types - (1) private data and (2) public data.
 
-![userdata](https://cdn.discordapp.com/attachments/1030935403177459732/1032368893496402060/user-data.png)
+![userdata](https://cdn.discordapp.com/attachments/1030935403177459732/1033896891588558948/Frame_9.png)
 
 **Public data :** Public data can be accessed by everyone including the developer and other users.
 
@@ -17,7 +17,7 @@ thirdstorage.user.public.set("key","value");
 ### Retrieving public data
 
 ```js
-thirdstorage.user.public.get("key","value");
+thirdstorage.user.public.get("key");
 ```
 
 ### Saving private data
@@ -29,7 +29,7 @@ thirdstorage.user.private.set("key","value");
 ### Retrieving public data
 
 ```js
-thirdstorage.user.private.get("key","value");
+thirdstorage.user.private.get("key");
 ```
 
 ## Architectural overview of private data
@@ -43,3 +43,7 @@ Imagine a scenario where one of the websites that hold your user data underwent 
 ## What happens in the client and server?
 
 The access control delegate is a part of the client. All the information passed to the server is shared after the data passes through the access control layer. Hence, the server operates with zero-knowledge. In the future, we are also considering to use rollups to verify the commits and state updates in the indexers. This way, the server can validate commits and state hashes even without a blockchain which computation costlier.
+
+## ZKP and verifiability in data
+
+This storage does not use ZKP at the moment. However, data can be verified with the private publishing key provided by IPNS. Introducing ZKP in Third Storage will be a game changer and we are rapidly working on shipping it.
